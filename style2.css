@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.container {
+    margin-top: 40px;
+}
+#uploadBtn {
+    margin-top: 15px;
+    padding: 12px;
+    width: 250px;
+    border-radius: 25px;
+    border: none;
+    background: white;
+    color: green;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#uploadBtn:hover {
+    background: darkgreen;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    width: 280px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: green;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: darkgreen;
+    color: white;
+}
+
+#spinner {
+    font-size: 20px;
+    margin-top: 20px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+#output {
+    margin-top: 30px;
+    font-size: 20px;
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
